@@ -1,0 +1,238 @@
+/*Background*/
+
+.telaLogin{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg, cyan , navy);
+}
+
+.telaCadastro{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(20,147,220), rgb(17,54,71));
+    
+}
+
+
+/*Background*/
+
+
+
+
+/*Body*/
+
+.login{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 15px;
+    color:white;
+    text-align: center;        
+}
+
+.box{
+    background-color: rgba(0, 0, 0, 0.603);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;  
+    border-radius: 15px;  
+    color:white;    
+    width: 20%;
+
+}
+
+fieldset{
+    border: 3px solid dodgerblue;
+}
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color:white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+    
+}
+
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;    
+    font-size: 12px;
+    color: orange
+}
+
+#data_nascimento{
+    border:none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#submit{
+    background-image: linear-gradient(to right, rgb(0,92,197), rgb(90,20,220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color:white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:hover{
+    background-image: linear-gradient(to right, rgb(255, 83, 203), rgb(255, 160, 35));
+}
+
+
+#usuarioNome{
+    font-size: 40px;
+    color:rgb(220, 20, 133);
+}
+   /* Adicionando estilo específico para a Tela do Usuário */
+   .telaUsuario {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(0, 12, 78), rgb(115, 0, 160));
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome {
+    background-color: #ffffffb1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    margin: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color:rgb(57, 30, 210);
+    font-size: 48px;
+    margin: 0 10px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.logout-button {
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logout-button:hover {
+    background-color: darkblue;
+}
+
+
+#linklistalivros{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 35px;
+    color:white;
+    text-align: justify; 
+    position: absolute;
+    font-size: 25px;
+    top: 40%;
+    right: 80%;
+}
+
+
+.logout-button{
+    position: absolute;
+    top: 5%;
+    left: 95%;
+
+}
+
+
+/*Body*/
+
+
+/*Bottons*/
+.inputlogin{
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.buttonLogin{
+    background-color: dodgerblue;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    color:white;
+    font-size: 15px;
+}
+
+button:hover{
+    background-color: orange;
+    cursor:pointer;
+}
+
+/*Bottons*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4;
+}
+.trofeu {
+    font-weight: bold;
+    color: gold;
+}
+
+
+

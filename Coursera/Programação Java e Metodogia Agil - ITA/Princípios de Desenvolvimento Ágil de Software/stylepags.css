@@ -1,0 +1,232 @@
+/* Adicionando estilo para a Lista de Livros */
+.pagelist {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #e0f7fa, #b2ebf2);
+    color: #333;
+    padding: 20px;
+}
+
+.pagelista {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+}
+
+.list-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 1000px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.list-section h2 {
+    border-bottom: 2px solid #000e79;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: #001e79;
+}
+
+.book-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.book-list li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.book-list li:last-child {
+    border-bottom: none;
+}
+
+.book-actions {
+    display: flex;
+    gap: 1px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.book-actions button {
+    background-color: #6b0079;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-actions button:hover {
+    background-color: #454d00;
+}
+
+/* Botões de Usuários e Troféus */
+.button_usuarios{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    background-color: #df8921;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 7px;
+    text-align: center;
+    margin: 10px auto;
+    cursor: pointer;
+    text-decoration: none;
+    width: 200px;
+}
+
+.button_trofeus{
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    background-color: #df8921;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 7px;
+    text-align: center;
+    margin: 10px auto;
+    cursor: pointer;
+    text-decoration: none;
+    width: 200px;
+
+}
+
+.button_usuarios:hover, .button_trofeus:hover {
+    background-color: #004d40;
+}
+
+/* Estilo para o modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; 
+    max-width: 400px; 
+    height: auto;
+    background-color: rgba(0, 0, 0, 0); 
+    padding-top: 0px;
+}
+
+.modal-content {
+    background-color: #fefefe00;
+    margin: 0 auto; 
+    padding: 8px;
+    border: 1px solid #88888800;
+    max-height: 70vh; /* Ajusta a altura máxima do modal */
+    overflow: auto; /* Adiciona rolagem se necessário */
+}
+
+.close {
+    color: #ff0404;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.modal img {
+    width: 90%;
+    height: auto;
+    object-fit: contain; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para a tabela de ranking */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.meuslivros{
+    background-image: linear-gradient(to right, #000000, #e3b2f2);
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #listaLivrosMarcados {
+        list-style-type: none;
+        padding: 0;
+        margin: 20px auto;
+        max-width: 600px;
+    }
+
+    #listaLivrosMarcados li {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    /* Estilos do modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(175, 175, 175, 0.5);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.rankingpage{
+    background-image: linear-gradient(to right, #824dff, #3575ff);
+}

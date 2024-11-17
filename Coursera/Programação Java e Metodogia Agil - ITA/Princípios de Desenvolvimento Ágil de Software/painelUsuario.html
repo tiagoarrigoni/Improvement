@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela do Usuário - Leitor Diário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylepags.css">    
+</head>
+
+<body class="telaUsuario">
+    <div class="welcome">
+        <h1>Bem-vindo ao Leitor Diário!</h1>
+        <p><h2>Olá, <span id="usuarioNome"></span>!</h2></p>
+    </div>
+
+    <button class="logout-button" id="logout">Sair</button>
+
+    <br>
+    <div class="geral"></div>
+
+    <!-- Listas de livros -->
+    <div class="list-section">
+        <h2>Mais Lidos</h2>
+        <ul class="book-list">
+            <li>
+                <b>Hellsing - Kouta Hirano</b>
+                <div class="book-actions">
+                    <button onclick="visualizarLivro('Hellsing', 'https://th.bing.com/th/id/OIP.2WwnO7rOufzW_XeJv6xUqQHaKe?rs=1&pid=ImgDetMain')">Visualizar</button>
+                    <button onclick="marcarLeitura('Hellsing', 72, 'Mais Lidos')">Marcar Leitura</button>
+                </div>
+            </li>
+            <!-- Continue com o resto dos livros da lista aqui -->
+            <li>
+                <b>Berserker - Kentaro Miura</b>
+                <div class="book-actions">
+                    <button onclick="visualizarLivro('Berserker', 'https://th.bing.com/th/id/OIP.VtujoHxz7CotO1FxanG0cQHaJm?rs=1&pid=ImgDetMain')">Visualizar</button>
+                    <button onclick="marcarLeitura('Berserker', 72, 'Mais Lidos')">Marcar Leitura</button>
+                </div>
+            </li>
+            <li>
+                <b>One Piece - Oda</b>
+                <div class="book-actions">
+                    <button onclick="visualizarLivro('One Piece', 'https://th.bing.com/th/id/OIP.DiCTBkgKtZsNlpGWSEfbJwAAAA?rs=1&pid=ImgDetMain')">Visualizar</button>
+                    <button onclick="marcarLeitura('One Piece', 72, 'Mais Lidos')">Marcar Leitura</button>
+                </div>
+            </li>
+            <li>
+                <b>Hunter x Hunter - Yoshihiro Togashi</b>
+                <div class="book-actions">
+                    <button onclick="visualizarLivro('Hunter x Hunter', 'https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781591167532/hunter-x-hunter-vol-1-9781591167532_hr.jpg')">Visualizar</button>
+                    <button onclick="marcarLeitura('Hunter x Hunter', 72, 'Mais Lidos')">Marcar Leitura</button>
+                </div>
+            </li>
+            <li>
+                <b>FullMetal Alchemist - Hiromu Arakawa</b>
+                <div class="book-actions">
+                    <button onclick="visualizarLivro('FullMetal Alchemist', 'https://th.bing.com/th/id/OIP.Chx2RFAKqyGPRmofROTgSAHaLI?rs=1&pid=ImgDetMain')">Visualizar</button>
+                    <button onclick="marcarLeitura('FullMetal Alchemist', 72, 'Mais Lidos')">Marcar Leitura</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+        </ul>
+    </div>
+
+    <div class="list-section">
+        <h2>Lançamentos</h2>
+        <ul class="book-list">
+            <!-- Livros de lançamentos -->
+            <li>
+                <b>Harry Potter e a Pedra Filosofal - J. K. Rowling</b>
+                <div class="book-actions">
+                    <button onclick="visualizarLivro('Harry Potter e a Pedra Filosofal', 'https://a-static.mlcdn.com.br/1500x1500/livro-harry-potter-e-a-pedra-filosofal-capa-dura-edicao-comemorativa-dos-20-anos-da-colecao-harry-potter/magazineluiza/225550000/82b6af40e5078ec116a26f58ba309185.jpg')">Visualizar</button>
+                    <button onclick="marcarLeitura('Harry Potter e a Pedra Filosofal', 350, 'Mais Lidos')">Marcar Leitura</button>
+                </div>
+            </li>
+            <li>
+                <b>Harry Potter e a Câmara Secreta - J. K. Rowling</b>
+                <div class="book-actions">
+                    <button onclick="visualizarLivro('Harry Potter e a Câmara Secreta', 'https://s2.glbimg.com/yRE77Mhfcq2SBfBKRQsrY_9y_f0=/e.glbimg.com/og/ed/f/original/2020/04/18/capa_hp_20_anos2.jpg')">Visualizar</button>
+                    <button onclick="marcarLeitura('Harry Potter e a Câmara Secreta', 350, 'Mais Lidos')">Marcar Leitura</button>
+                </div>
+            </li>
+            <li>
+                <b>Harry Potter e o Prisioneiro de Azkaban - J. K. Rowling</b>
+                <div class="book-actions">
+                    <button onclick="visualizarLivro('Harry Potter e o Prisioneiro de Azkaban', 'https://th.bing.com/th/id/OIP.k7z5d9BHoSF13BIxXfcI_gHaLS?w=684&h=1042&rs=1&pid=ImgDetMain')">Visualizar</button>
+                    <button onclick="marcarLeitura('Harry Potter e o Prisioneiro de Azkaban', 350, 'Mais Lidos')">Marcar Leitura</button>
+                </div>
+            </li>
+            <li>
+                <b>Harry Potter e o Calice de Fogo - J. K. Rowling</b>
+                <div class="book-actions">
+                    <button onclick="visualizarLivro('Harry Potter e o Calice de Fogo', 'https://lh3.googleusercontent.com/-8mSryhWc0xA/Xonnav2MwfI/AAAAAAAAH6E/Fr2Li4asKKMc-CL7U-8-JsD73UtOb0bSwCLcBGAsYHQ/s1600/1586095970421030-6.png')">Visualizar</button>
+                    <button onclick="marcarLeitura('Harry Potter e o Calice de Fogo', 350, 'Mais Lidos')">Marcar Leitura</button>
+                </div>
+            </li>
+            <li>
+                <b>Harry Potter e a Ordem da Fênix - J. K. Rowling</b>
+                <div class="book-actions">
+                    <button onclick="visualizarLivro('Harry Potter e a Ordem da Fênix', 'https://a-static.mlcdn.com.br/1500x1500/livro-harry-potter-e-a-ordem-da-fenix-capa-dura-edicao-comemorativa-dos-20-anos-da-colecao-harry-potter/livrariacultura2/10690440/91f8f89fbbc0b205d649ce1bf88dff86.jpg')">Visualizar</button>
+                    <button onclick="marcarLeitura('Harry Potter e a Ordem da Fênix', 350, 'Mais Lidos')">Marcar Leitura</button>
+                </div>
+            </li>
+            <li>
+                <b>Harry Potter e o Enigma do Príncipe - J. K. Rowling</b>
+                <div class="book-actions">
+                    <button onclick="visualizarLivro('Harry Potter e o Enigma do Príncipe', 'https://cdn.awsli.com.br/2500x2500/549/549583/produto/57454922/26d3d27dc3.jpg')">Visualizar</button>
+                    <button onclick="marcarLeitura('Harry Potter e o Enigma do Príncipe', 350, 'Mais Lidos')">Marcar Leitura</button>
+                </div>
+            </li>
+            <li>
+                <b>Harry Potter e as Relíquias da Morte - J. K. Rowling</b>
+                <div class="book-actions">
+                    <button onclick="visualizarLivro('Harry Potter e as Relíquias da Morte', 'https://newparquedpedro.vtexassets.com/arquivos/ids/176963/image-928e40118ae340cdbafbe4c363ca3f48.jpg?v=637405230612270000')">Visualizar</button>
+                    <button onclick="marcarLeitura('Harry Potter e as Relíquias da Morte', 350, 'Mais Lidos')">Marcar Leitura</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+        </ul>
+    </div>
+
+    <div class="list-section">
+        <h2>Clássicos</h2>
+        <ul class="book-list">
+            <!-- Livros clássicos -->
+            <li>
+                <b>Os Miseraveis - Victor Hugo</b>
+                <div class="book-actions">
+                    <button onclick="visualizarLivro('Os Miseraveis', 'https://th.bing.com/th/id/OIP.XJGpG5yuhqqTpriPYMB59AHaKM?rs=1&pid=ImgDetMain')">Visualizar</button>
+                    <button onclick="marcarLeitura('Os Miseraveis', 124, 'Mais Lidos')">Marcar Leitura</button>
+                </div>
+            </li>
+            <li>
+                <b>1984 - George Orwell</b>
+                <div class="book-actions">
+                    <button onclick="visualizarLivro('1984', 'https://d30a6s96kk7rhm.cloudfront.net/original/readings/978/014/103/9780141036144.jpg')">Visualizar</button>
+                    <button onclick="marcarLeitura('1984', 124, 'Mais Lidos')">Marcar Leitura</button>
+                </div>
+            </li>
+            <li>
+                <b>A Revolução dos Bichos - George Orwell</b>
+                <div class="book-actions">
+                    <button onclick="visualizarLivro('A Revolução dos Bichos', 'https://th.bing.com/th/id/R.e0d98c647e1fdb10a53b341a444ec19e?rik=jzwNMNOuZ%2bw87Q&riu=http%3a%2f%2fprodimage.images-bn.com%2fpimages%2f9786588436080_p0_v2_s1200x630.jpg&ehk=T%2f6GVi2OUEFVGYM6TwWbmYdx0dL9zuaHK%2fOuem6aHVM%3d&risl=&pid=ImgRaw&r=0')">Visualizar</button>
+                    <button onclick="marcarLeitura('A Revolução dos Bichos', 124, 'Mais Lidos')">Marcar Leitura</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+        </ul>
+    </div>
+
+    <!-- Links adicionais -->
+    <a href="ranking.html" class="button_usuarios">Ranking de Usuários e Troféus</a>
+    <a href="meuslivros.html" class="button_trofeus">Lista de Livros Marcados Lidos!</a>
+
+    <!-- Modal para visualização do livro -->
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="bookImage" src="" alt="Imagem do Livro">
+        </div>
+    </div>
+
+    <!-- Script externo -->
+    <script src="painelUsuario.js"></script>
+</body>
+</html>
