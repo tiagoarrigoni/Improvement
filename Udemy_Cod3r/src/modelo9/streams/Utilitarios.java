@@ -15,7 +15,7 @@ public class Utilitarios {
 			n -> n.charAt(0) + "";
 	
 	public static String grito(String n) {
-		return n + n + "!!!";
+		return n + "!!!";
 	}
 
 }

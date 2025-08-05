@@ -26,6 +26,12 @@ public class Map {
 		.map(Utilitarios::grito)
 		.forEach(print);
 		
+		System.out.println("\n");
+		marcas.stream()
+		.map(primeiraLetra)
+		.map(Utilitarios::grito)
+		.forEach(print);
+		
 		
 	}
 
