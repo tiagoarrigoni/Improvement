@@ -36,10 +36,6 @@ public class Reduce3 {
 		System.out.println("A media do aluno é: " + media.getValor());
 		
 		
-		
-		
-		
-		
 	}
 
 }
