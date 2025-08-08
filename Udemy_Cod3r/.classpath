@@ -2,6 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src/modulo8"/>
 	<classpathentry kind="src" path="src/modelo9"/>
+	<classpathentry kind="src" path="src/modulo10"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21">
 		<attributes>
 			<attribute name="module" value="true"/>
