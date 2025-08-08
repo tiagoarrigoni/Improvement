@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Aluno {
 	
-	final String nome;
+	public  String nome;
 	final double nota;
 	final boolean bomComportamento;
 	
