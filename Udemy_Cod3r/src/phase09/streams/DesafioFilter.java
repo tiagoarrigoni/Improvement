@@ -38,8 +38,6 @@ public class DesafioFilter {
 		.map(abreviarNome)
 		.forEach(System.out::println);
 		
-		
-		
 	}
 
 }
