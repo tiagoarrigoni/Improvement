@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-23">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="phase08/" kind="src" path="src"/>
+	<classpathentry kind="src" path="phase08"/>
+	<classpathentry kind="src" path="phase09"/>
+	<classpathentry kind="src" path="phase10"/>
+	<classpathentry kind="src" path="phase11"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
