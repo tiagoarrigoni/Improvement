@@ -1,11 +1,17 @@
-package br.com.cod3r.cm.modelo;
+package campominado.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.cod3r.cm.excecao.ExplosaoException;
+import campominado.excecao.ExplosaoException;
 
 public class Campo {
+	
+	public static final String RESET = "\u001B[0m";
+	public static final String VERMELHO = "\u001B[31m";
+	public static final String AMARELO = "\u001B[33m";
+	public static final String CIANO = "\u001B[36m";
+	public static final String VERDE = "\u001B[32m";
 
 	private final int linha;
 	private final int coluna;
@@ -73,16 +79,65 @@ public class Campo {
 		minado = true;
 	}
 	
+	public boolean isMinado() {
+		return minado;
+	}
+	
 	public boolean isMarcado() {
 		return marcado;
 	}
 	
+	
+	void setAberto(boolean aberto) {
+		this.aberto = aberto;
+	}
+
 	public boolean isAberto() {
 		return aberto;
 	}
 	
 	public boolean isFechado() {
 		return !isAberto();
+	}
+
+	public int getLinha() {
+		return linha;
+	}
+
+	public int getColuna() {
+		return coluna;
+	}
+	
+	boolean objetivoAlcancado() {
+		boolean desvendado = !minado && aberto;
+		boolean protegido = minado && marcado;
+		return desvendado || protegido;
+	}
+	
+	long minasNaVizinhas() {
+		return vizinhos.stream().filter(v -> v.minado).count();
+	}
+	
+	void reiniciar() {
+		aberto = false;
+		minado = false;
+		marcado = false;
+	}
+	
+	public String toString() {
+		
+		if (marcado) {
+		    return VERMELHO + "x" + RESET;
+		} else if (aberto && minado) {
+		    return AMARELO + "*" + RESET;
+		} else if (aberto && minasNaVizinhas() > 0) {
+		    return VERDE + Long.toString(minasNaVizinhas()) + RESET;
+		} else if (aberto) {
+		    return " ";
+		} else {
+		    return CIANO + "?" + RESET;
+		}
+		
 	}
 
 }

@@ -1,10 +1,11 @@
-package br.com.cod3r.cm.modelo;
+package campominado.modelo;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import br.com.cod3r.cm.excecao.ExplosaoException;
+import campominado.excecao.ExplosaoException;
+import campominado.modelo.Campo;
 
 class CampoTest {
 
