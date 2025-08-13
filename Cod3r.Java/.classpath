@@ -12,6 +12,7 @@
 	<classpathentry kind="src" path="phase11"/>
 	<classpathentry kind="src" path="phase11test"/>
 	<classpathentry kind="src" path="phase12"/>
+	<classpathentry kind="src" path="phase13"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
