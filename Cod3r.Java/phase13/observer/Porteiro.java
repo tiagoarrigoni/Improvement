@@ -13,6 +13,7 @@ public class Porteiro extends Thread {
 		this.observers.add(observer);
 	}
 
+	@SuppressWarnings("resource")
 	@Override
 	public void run() {
 		Scanner scan = new Scanner(System.in);

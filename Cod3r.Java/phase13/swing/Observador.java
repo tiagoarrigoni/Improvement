@@ -7,6 +7,7 @@ import javax.swing.JFrame;
 
 public class Observador {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
 		

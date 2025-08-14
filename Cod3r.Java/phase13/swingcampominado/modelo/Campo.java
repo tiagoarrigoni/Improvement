@@ -5,12 +5,6 @@ import java.util.List;
 
 public class Campo {
 
-	public static final String RESET = "\u001B[0m";
-	public static final String VERMELHO = "\u001B[31m";
-	public static final String AMARELO = "\u001B[33m";
-	public static final String CIANO = "\u001B[36m";
-	public static final String VERDE = "\u001B[32m";
-
 	private final int linha;
 	private final int coluna;
 
@@ -55,7 +49,7 @@ public class Campo {
 
 	}
 
-	void altenarMarcacao() {
+	public void altenarMarcacao() {
 		if (!aberto) {
 			marcado = !marcado;
 
@@ -67,7 +61,7 @@ public class Campo {
 		}
 	}
 
-	boolean abrir() {
+	public boolean abrir() {
 
 		if (!aberto && !marcado) {
 			aberto = true;
